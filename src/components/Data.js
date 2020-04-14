@@ -49,4 +49,6 @@ export const foodList =[
     }
   ];
 
+  export const detailFood = [];
+
   

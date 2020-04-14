@@ -9,7 +9,7 @@ export class Home extends Component {
       <div>
         <Container>
           <Row>
-            {foodList.map(food => <Food food={food} />)}
+            {foodList.map(food => <Food food={food} key={food.id}/>)}
           </Row>
         </Container>
       </div>

@@ -8,11 +8,15 @@ export class Detail extends Component {
     render() {
         return (
             <ProductConsumer>
-                {
-                    (value) => {
-                        console.log(value.name);
-                        return <p>Hello {value.name}</p>
-                    }
+                {value => {
+                    const {image,name,price,id} = value.detailFood
+                    return (
+                        <React.Fragment>
+                            <img src={image}/>
+                            {name}
+                        </React.Fragment>
+                    )
+                }
                 }
             </ProductConsumer>
         )
