@@ -12,7 +12,7 @@ export class Detail extends Component {
                     const {image,name,price,id} = value.detailFood
                     return (
                         <React.Fragment>
-                            <img src={image}/>
+                            <img src={image} style={{width: '15rem',height: '15rem'}} />
                             {name}
                         </React.Fragment>
                     )
